@@ -1,0 +1,28 @@
+{
+  "baseUrl": "https://devexpress.github.io/testcafe/",
+  "reporter": [
+    { "name": "list" },
+    {
+      "name": "html",
+      "output": "reports/report.html"
+    }
+  ],
+  "src": "tests",
+
+  "selectorTimeout": 5000,
+  "assertionTimeout": 5000,
+  "pageLoadTimeout": 5000,
+
+  "debugMode": false,
+  "concurrency": 2,
+  "speed": 1,
+
+  "screenshots": {
+    "takeOnFails": true,
+    "path": "./screenshots",
+    "pathPattern": "${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${FIXTURE}.png",
+    "fullPage": true,
+    "thumbnails": false
+  },
+  "color": true
+}

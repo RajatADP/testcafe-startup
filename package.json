@@ -1,0 +1,22 @@
+{
+  "name": "testcafe-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome",
+    "test:chrome:headless": "testcafe chrome:headless",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iphone X tests",
+    "test:safari": "testcafe safari",
+    "test:chrome:smoke": "testcafe chrome --fixture-meta suite=regression",
+    "test:multiple": "testcafe chrome,safari"
+  },
+  "author": "rajat",
+  "license": "ISC",
+  "devDependencies": {
+    "testcafe": "^2.3.1"
+  },
+  "dependencies": {
+    "testcafe-reporter-html": "^1.4.6"
+  }
+}
